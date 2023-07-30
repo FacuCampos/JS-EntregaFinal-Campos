@@ -13,7 +13,7 @@ function inicio(){
 
 // Traigo los productos del JSON y los pusheo a catalogo
 async function cargarProductos(){
-    const response = await fetch('../productos.json');
+    const response = await fetch('./productos.json');
     if (response.ok){
         let productos = await response.json();
         productos.forEach((el) => {
