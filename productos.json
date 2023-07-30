@@ -1,0 +1,92 @@
+[
+   {
+        "id": "catan",
+        "nombre": "Catan",
+        "precio": 23300,
+        "categoria": "Juego de mesa",
+        "editorial": "Devir",
+        "imagen": "Catan_base.jpg",
+        "alternativo": "foto del catan",
+        "descuento": 15
+    },
+    {
+        "id": "bang",
+        "nombre": "Bang!",
+        "precio": 18000,
+        "categoria": "Juego de mesa",
+        "editorial": "Da Vinci Games",
+        "imagen": "bang.jpg",
+        "alternativo": "foto del bang",
+        "descuento": 0
+    },
+    {
+        "id": "sushiGoParty",
+        "nombre": "Sushi Go! Party",
+        "precio": 15000,
+        "categoria": "Juego de mesa",
+        "editorial": "Devir",
+        "imagen": "sushi-go-party.jpg",
+        "alternativo": "foto del sushi go party",
+        "descuento": 0
+    },
+    {
+        "id": "cuboRubik",
+        "nombre": "Cubo Rubik",
+        "precio": 7200,
+        "categoria": "Cubo rubik",
+        "editorial": "Hasbro",
+        "imagen": "cubo-rubik.jpg",
+        "alternativo": "foto del cubo rubik",
+        "descuento": 0
+    },
+    {
+        "id": "manualDnD",
+        "nombre": "Manual de Dungeons and Dragons",
+        "precio": 32000,
+        "categoria": "Juego de rol",
+        "editorial": "Wizards of the Coast",
+        "imagen": "manualDnD.jpg",
+        "alternativo": "foto del manual de DnD",
+        "descuento": 10
+    },
+    {
+        "id": "setDados",
+        "nombre": "Set de Dados",
+        "precio": 4000,
+        "categoria": "Dados",
+        "editorial": "T&G",
+        "imagen": "setDados.jpg",
+        "alternativo": "foto del set de dados",
+        "descuento": 0
+    },
+    {
+        "id": "manualCoC",
+        "nombre": "Manual de La Llamada de Cthulhu",
+        "precio": 28000,
+        "categoria": "Juego de rol",
+        "editorial": "Edge Entertainment",
+        "imagen": "manualCthulhu7Ed.jpg",
+        "alternativo": "foto del manual de CoC 7Ed",
+        "descuento": 5
+    },
+    {
+        "id": "alice",
+        "nombre": "Alice ha desaparecido",
+        "precio": 7600,
+        "categoria": "Juego de mesa",
+        "editorial": "Devir",
+        "imagen": "Alice-ha-desaparecido.jpg",
+        "alternativo": "foto del alice ha desaparecido",
+        "descuento": 0
+    },
+    {
+        "id": "stoneAge",
+        "nombre":"Stone Age",
+        "precio": 28200,
+        "categoria": "Juego de mesa",
+        "editorial": "Devir",
+        "imagen": "Stone_age.jpg",
+        "alternativo": "foto del stone age",
+        "descuento": 0
+    }
+]

@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url(../img/subpattern//light-veneer.webp);
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+th {
+    display: table-cell;
+    vertical-align:middle;
+    justify-content: center;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+td {
+    display: table-cell;
+    vertical-align:middle;
+    text-align: left;
+    background-color: rgba(236, 236, 236, 0.563);
+    border-bottom: solid 1px rgba(145, 145, 145, 0.5019607843);
+    padding: 5px;
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+.navegador {
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #eb5e28;
+    height: 60px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+
+.lista-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.lista-nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.lista-nav li div{
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lista-nav li a {
+    padding: 3px 0;
+}
+
+.lista-nav li a img{
+    height: 100%;
+}
+
+#carritoLi{
+    width: 50px;
+}
+.lista-nav li button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lista-nav li button svg{
+    transition: all 0.2s;
+}
+
+.lista-nav li button:hover{
+    background-color: #f67440;
+}
+
+#carritoLi button:hover svg{
+    transform: scale(1.2);
+}
+
+.lista-nav .carritoOnClick{
+    background-color: #1b3039;
+}
+
+.lista-nav .carritoOnClick #botonCarrito #contadorCarrito{
+    background-color: #eb5e28;
+    color: white;
+    font-weight: bold
+}
+
+.lista-nav .carritoOnClick button:hover {
+    background-color: #2b4d5b;
+}
+
+
+
+#contadorCarrito{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    border-radius: 100%;
+    color: white;
+    background-color: #1b3039;
+    font-weight: bold;
+}
+
+.vistaProductos {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3%;
+}
+
+.vistaVacia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.vistaVacia div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 95px;
+    left: 0;
+    margin-top: 50px;
+
+}
+.vistaVacia div p{
+    font-size:  3rem;
+    margin-bottom: 30px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 145, 145, 0.5019607843);
+    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.2), 0 6px 20px 0 rgba(30, 30, 30, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 0;
+    height:fit-content;
+}
+.producto img {
+    width: 200px;
+    border-radius: 8px;
+}
+.producto .info-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 10px 0;
+}
+.producto .info-producto figcaption {
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.producto .info-producto p {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.producto button {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: 7.5px 15px;
+    border: none;
+    background-color: #1b3039;
+    color: #fffcf4;
+    cursor: pointer;
+}
+.producto button:active {
+    background-color: #2b4d5b;
+    transform: scale(0.97);
+}
+
+.producto button:hover {
+    background-color: #2b4d5b;
+}
+
+.producto .info-producto .descuentoBox{
+    margin: 5px 0;
+}
+
+.producto .info-producto .descuento{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: purple;
+}
+
+.producto .info-producto .precioConDescuento{
+    height: 100%;
+    margin: 0;
+}
+
+.producto .info-producto .precioSinDescuento{
+    text-decoration: line-through;
+    color: crimson;
+    margin: 0;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 20px 8%;
+    margin-top: 40px;
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#carritoContenedor{
+    position: sticky;
+    width: 350px;
+    top: 50px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 99;
+    margin: 0;
+    background-color: rgb(205, 205, 205);
+    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.2), 0 6px 20px 0 rgba(30, 30, 30, 0.2);
+}
+
+#ticketCarrito{
+    width: 350px;
+}
+
+#ticketCarrito table{
+    background-color: rgb(205, 205, 205);
+    margin-bottom: 0;
+    border: rgba(145, 145, 145, 0.5019607843);
+    width: 100%;
+}
+
+#ticketCarrito p{
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.borrarCarrito{
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 7.5px 15px;
+    border: none;
+    background-color: crimson;
+    color: #fffcf4;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+}
+.borrarCarrito:active {
+    background-color: rgb(233, 11, 55);
+    color: rgb(254, 254, 75);
+    transform: scale(0.97);
+}
+
+.borrarCarrito:hover {
+    background-color: rgb(233, 11, 55);
+    color: rgb(254, 254, 75);
+}
+
+.botonComprar{
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 7.5px 15px;
+    border: none;
+    background-color: #1b3039;
+    color: #fffcf4;
+    cursor: pointer;
+}
+.botonComprar:active {
+    background-color: green;
+    color: rgb(254, 254, 75);
+    transform: scale(0.97);
+}
+
+.botonComprar:hover {
+    background-color: green;
+    color: rgb(254, 254, 75);
+}
+
+.cantidadCol{
+    width: 20px;
+}
+
+.productoCol{
+    width: 57%;
+}
+
+.subtotalCol{
+    width: 23%;
+}
+
+.celdaCantidad{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tdCantidad{
+    border-left: 1px solid rgba(27, 48, 57, .3);
+    border-right: 1px solid rgba(27, 48, 57, .3);
+}
+
+.celdaCantidad button{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #1b3039;
+    color: #fffcf4;
+    cursor: pointer;
+}
+.celdaCantidad button:active {
+    background-color: #2b4d5b;
+    transform: scale(0.97);
+}
+
+.celdaCantidad button:hover {
+    background-color: #2b4d5b;
+}
+
+.totalTexto{
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+#ticketCarrito table .filaTotal td{
+    background-color: rgb(205, 205, 205);
+    color: color;
+    text-align: right;
+}
+
+.filaTotal th{
+    background-color: rgb(205, 205, 205);
+    color: black;
+}
+
+.precioColumna{
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.itemEnTabla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgCarrito{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.cantidadTicket{
+    margin:0;
+    margin: 0 5px;
+}
+
+.nombreEnTabla{
+    margin-left: 10px;
+}
+
+#ticketCarrito table .headTabla{
+    background-color: #1b3039;
+    color: white;
+}
+
+.tostada{
+    background: linear-gradient(to left, #f67440, green);
+    border: solid black 1px;
+    z-index: 50;
+    font-size: 1.5rem;
+}
+
+.filtro-box {
+    grid-area: filtro;
+}
+  
+.filtro {
+    background-color: rgba(145, 145, 145, 0.5019607843);
+    width: 240px;
+    height: auto;
+    padding: 20px;
+    line-height: 2.2rem;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.2), 0 6px 20px 0 rgba(30, 30, 30, 0.2);
+    border-radius: 8px;
+    position: sticky;
+    top: 95px;
+    left: 0;
+}
+.filtro h3 {
+    margin-bottom: 10px;
+}
+.filtro div h4 {
+    margin: 20px 0 10px 0;
+}
+.filtro ul {
+    list-style: none;
+  }
+.filtro ul li {
+    display: flex;
+}
+.filtro ul li form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    }
+.filtro ul li form .txt-filtro {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #1b3039;
+}
+.filtro ul li form input {
+    margin-left: 5px;
+}
+.filtro ul li form input:hover {
+    cursor: pointer;
+}
+
+#promos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(220, 32, 220);
+    z-index: 50;
+    position: sticky;
+    top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.2), 0 6px 20px 0 rgba(30, 30, 30, 0.2);
+}
+
+#promos span{
+    font-weight: bold;
+    color: yellow;
+}
