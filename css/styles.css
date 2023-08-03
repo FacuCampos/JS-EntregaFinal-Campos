@@ -110,6 +110,7 @@ hr{
 }
 .lista-nav li a img{
     height: 100%;
+    margin-left: 50px;
 }
 .lista-nav li button{
     position: relative;
