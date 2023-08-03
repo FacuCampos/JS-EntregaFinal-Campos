@@ -25,9 +25,11 @@ async function cargarProductos(){
         Toastify({
             text:"Hubo un error, por favor intente mas tarde",
             duration: 10000,
-            close: true,
+            close: false,
             gravity: 'bottom',
+            position: 'center',
             stopOnFocus:true,
+            className: 'errorDeCargaToast',
         }).showToast();
     }
 }
@@ -160,7 +162,7 @@ function mostrarTostada(){
         gravity: "bottom",
         position: "right",
         stopOnFocus: true,
-        className: 'tostada',
+        className: 'agregarProductoToast',
         //onClick: abrirCarrito()
       }).showToast();
 }

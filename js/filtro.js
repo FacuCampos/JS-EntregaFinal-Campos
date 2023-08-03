@@ -72,7 +72,9 @@ function filtrar(){
         }
     })
 
-    const filtrados = catalogo.filter((item) => { // Filtro los elementos del catalogo que coinciden con los checkbox marcados
+    // Filtro los elementos del catalogo que coinciden con los checkbox marcados.
+    // Pido que si no hay nada marcado, devuelva true, y que si se marca una checkbox filtre los elementos del catalogo con esa categoria o editorial. Por ultimo que retorne aquellos donde coinciden ambas.
+    const filtrados = catalogo.filter((item) => { 
         const categoriaIncluida = categoriasSeleccionadas.length === 0 || categoriasSeleccionadas.includes(item.categoria);
         const editorialIncluida = editorialesSeleccionadas.length === 0 || editorialesSeleccionadas.includes(item.editorial);
         return categoriaIncluida && editorialIncluida;
