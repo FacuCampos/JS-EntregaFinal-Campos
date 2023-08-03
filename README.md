@@ -3,7 +3,7 @@
 ### Lenguajes
 - HTML 5
 - CSS 3
-- JS
+- Javascript
 
 ### Frameworks
 - Bootstrap
@@ -83,11 +83,14 @@ En caso de no haber nada seleccionado, se mostrará todo el catálogo.
 Esta sección es la que agarra el array de productos y muestra en pantalla todo el catálogo. **Por cada producto de *productos.json*, se crea una tarjeta** desde el DOM y se la agrega a un grid.
 
 En caso de que ocurra un error al traer y convertir el .json de productos, una tostada nos informará de dicho error.
+
 <img width="271" alt="errorToast" src="https://github.com/FacuCampos/EntregaFinal-Campos/assets/129131205/356ff305-7a96-4de1-b73e-b1527b990a33">
 
-
 Cada tarjeta contiene un botón de *"Agregar al carrito"*, al hacer *click* **se agregara el elemento seleciconado al array de productos** y una tostada nos avisará que se agregó correctamente.
-<img width="215" alt="agregadoToast" src="https://github.com/FacuCampos/EntregaFinal-Campos/assets/129131205/9ff82a44-040c-4a7e-91b6-fa3e9a746ddc">
+
+<img width="251" alt="agregadoToast" src="https://github.com/FacuCampos/EntregaFinal-Campos/assets/129131205/8afbbb8c-4ddb-49f4-bc64-b57e652c7a31">
+
+**Se puede hacer *click* en la tostada para abrir el carrito**.
 
 
 ### Footer
