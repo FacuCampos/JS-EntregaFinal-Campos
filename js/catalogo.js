@@ -145,7 +145,7 @@ function tarjeta(producto, seccion){
     seccion.appendChild(card);
     botonEnTarjeta.onclick = () => {
         agregarCarrito(producto);
-        mostrarTostada();
+        mostrarTostada(producto);
     };
 
     if (descuento == 0){
@@ -154,16 +154,19 @@ function tarjeta(producto, seccion){
 }
 
 //Tostada de producto agregado
-function mostrarTostada(){
+function mostrarTostada(producto){
     Toastify({
-        text: "Producto agregado al carrito",
-        duration: 3000,
-        close: true,
+        text: `Producto agregado al carrito:\n${producto.nombre}`,
+        avatar: `../img/productos/${producto.imagen}`,
+        duration: 2000,
+        close: false,
         gravity: "bottom",
         position: "right",
         stopOnFocus: true,
         className: 'agregarProductoToast',
-        //onClick: abrirCarrito()
+        onClick: () => {
+            abrirCarrito()
+        },
       }).showToast();
 }
 
